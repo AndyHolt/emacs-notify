@@ -7,7 +7,14 @@
 
 ;; Display notifications to the desktop using notify-send
 
-
+(defun emacs-notify-send-message (headline-string message-string)
+  "Send message to notification"
+  (interactive)
+  (shell-command (concat "notify-send --icon=emacs \""
+                         headline-string
+                         "\" \""
+                         message-string
+                         "\"")))
 
 (provide 'emacs-notify)
 
