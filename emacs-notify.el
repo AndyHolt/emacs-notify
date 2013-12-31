@@ -8,8 +8,7 @@
 ;; Display notifications to the desktop using notify-send
 
 (defun emacs-notify-send-message (headline-string message-string)
-  "Send message to notification"
-  (interactive)
+  """Send message to notification"""
   (shell-command (concat "notify-send --icon=emacs \""
                          headline-string
                          "\" \""
